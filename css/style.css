@@ -427,7 +427,7 @@ html:has(.sector-nav) { scroll-padding-top: 150px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 36px; }
 @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
-.site-footer h4 { color: var(--footer-head); font-size: 1rem; margin-bottom: 14px; }
+.site-footer h3 { color: var(--footer-head); font-size: 1rem; margin-bottom: 14px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .site-footer a { color: var(--footer-text); text-decoration: none; transition: color var(--fast) ease-out; }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
@@ -472,3 +472,22 @@ html:has(.sector-nav) { scroll-padding-top: 150px; }
   .js .reveal { opacity: 1; transform: none; }
   .media:hover img, .card:hover .card-img img, .gallery figure:hover img { transform: none; }
 }
+
+/* ---------- Spec fixes, 25 Nov 2026: tap targets, readable text, narrow phones ---------- */
+.vh-h { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 900px) {
+  .site-footer a:not(.btn):not(:has(img, svg)) { display: inline-block; min-width: 44px; padding-top: 11px; padding-bottom: 11px; }
+  .site-footer ul { gap: 0; }
+  .site-footer li { margin-bottom: 0; padding-top: 0; padding-bottom: 0; align-items: center; }
+  .contact-list a { display: inline-block; padding-top: 11px; padding-bottom: 11px; }
+  .topbar a { display: inline-block; min-height: 44px; line-height: 44px; margin: -6px 0; }
+  .topbar .container { padding-top: 6px; padding-bottom: 6px; align-items: center; }
+}
+:root { --gold: #7c5a1b; }
+[data-theme="dark"] { --gold: #d6ad5c; }
+.eyebrow, .sector h3.sub { font-size: .86rem; }
+.sector-nav .pills a { display: inline-flex; align-items: center; min-height: 44px; }
+.brand { min-height: 44px; }
+.call-btn, .header-actions .btn { min-height: 44px; }
+@media (max-width: 640px) { .theme-toggle, .menu-toggle { width: 44px; height: 44px; } }
+@media (max-width: 380px) { .site-header .container { gap: 8px; padding-left: 12px; padding-right: 12px; } .header-actions { gap: 6px; } }

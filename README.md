@@ -1,5 +1,7 @@
 # Streamline Plumbing: website rebuild mockup
 
+> **Pitch points below were written when the site was built and most haven't been rechecked.** Phones get a separate Wix version, so "menu runs off the screen" is **not confirmed**. Confirmed 25 Nov 2026: their ABN is set up as a tappable phone number, and the footer says 2020. Check each one on the live site, on a real phone, before saying it.
+
 A modern rebuild of http://streamlineplumbing.com.au, a commercial plumbing contractor at 3/31 Oxleigh Dr, Malaga WA, phone (08) 9249 4350. It uses plain HTML, CSS and JS, with no frameworks or build step.
 
 ## Pages
